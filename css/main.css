@@ -1,44 +1,81 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@200;400;700&family=Raleway:wght@200;400;700&display=swap");
-.navbar {
-  background-color: #0583F2;
-  height: 80px;
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.bar_menu {
+  background-color: whitesmoke;
+  height: 60px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
-.navbar label {
-  color: white;
-  font-size: 2rem;
+.bar_menu label {
+  color: #8C4278;
+  font-size: 2.5rem;
   padding: 0;
-  font-weight: 700;
+  font-weight: 400;
   font-family: "Raleway", sans-serif;
 }
-.navbar ul {
+.bar_menu ul {
   display: flex;
 }
-.navbar ul li {
+.bar_menu ul li {
   list-style: none;
   margin-right: 10px;
+  padding: 10px;
 }
-.navbar ul li a {
-  font-size: 1rem;
-  color: white;
+.bar_menu ul li a {
+  font-size: 1.5rem;
+  color: gray;
   font-family: "Quicksand", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
 }
-.navbar ul .show {
-  top: 65px;
+.bar_menu ul li a:hover {
+  font-weight: 700;
+  padding: 5px;
+  color: #8C4278;
 }
-.navbar span {
+.bar_menu span {
   margin-right: 3px;
   font-size: 25px;
   color: white;
   cursor: pointer;
   display: none;
 }
+
+@media screen and (max-width: 380px) {
+  .navbar_logo {
+    font-size: 1.5rem;
+    padding-left: 35px;
+  }
+  .navbar_items {
+    font-size: 1rem;
+  }
+}
+.indexMain {
+  text-align: center;
+  margin: auto;
+  padding: 1em;
+}
+
+.cardsServicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+
 /*!
  * Bootstrap  v5.2.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -10810,6 +10847,19 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+h1, .h1 {
+  text-align: center;
+  color: #8C4278;
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+  color: gray;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */

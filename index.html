@@ -7,19 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Soulmate</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/17afcc6a19.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <nav class="menu">
-        <div class="navbar">
+        <div class="bar_menu">
             <label for="" class="navbar_logo">Soulmate</label>
             <ul>
-                <li><a href="index.html">inicio</a></li>
-                <li><a href="secciones/nosotros.html">nosotros</a></li>
-                <li><a href="secciones/proyectos.html">proyectos</a></li>
-                <li><a href="secciones/productos.html">productos</a></li>
-                <li><a href="secciones/contacto.html">contacto</a></li>
+                <li class="navbar_items"><a href="index.html">inicio</a></li>
+                <li class="navbar_items"><a href="secciones/proyectos.html">proyectos</a></li>
+                <li class="navbar_items"><a href="secciones/nosotros.html">nosotros</a></li>
+                <li class="navbar_items"><a href="secciones/productos.html">productos</a></li>
+                <li class="navbar_items"><a href="secciones/contacto.html">contacto</a></li>
             </ul>
             <span class="navbar_btnmenu">
                 <i class="fa fa-bars"></i>
@@ -28,22 +28,39 @@
     </nav>
     <div>
         <header>Imagen Héroe</header>
-        <section>
+        <section class="indexMain">
             <div>
-                <h1>Conoce nuestros servicios</h1>
+                <h1>Creaciones Soulmate</h1>
                 <p> En <strong>Soulmate</strong> nos encanta el diseño</p>
             </div>
-            <div>
-                <div>Ícono 1</div>
-                <div>Descripción del ícono</div>
-            </div>
-            <div>
-                <div>Ícono 2</div>
-                <div>Descripción del ícono</div>
-            </div>
-            <div>
-                <div>Ícono 3</div>
-                <div>Descripción del ícono</div>
+            <div class="cardsServicios">
+                <div class="cardsServicios_row">
+                    <div>
+                        <img src="asc/eventos.png" alt="Dale un toque especial a tus eventos.">
+                    </div>
+                    <div>
+                        <h2>Eventos</h2>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="cardsServicios_row">
+                    <div>
+                        <img src="asc/papeleria.png" alt="Personaliza tus artículos de oficina">
+                    </div>
+                    <div>
+                        <h2>Papelería</h2>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="cardsServicios_row">
+                    <div>
+                        <img src="asc/personalizables.png" alt="Regala detalles únicos">
+                    </div>
+                    <div>
+                        <h2>Regalos</h2>
+                        <p>Regala algo único pensado para esa persona especial. Contamos con una gran selección de productos para fechas o temporadas especiales. Un detalle único para cada ocasión.</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section></section>
